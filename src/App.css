@@ -67,9 +67,9 @@ footer, .fixed-bottom{
   margin:1%;
   
   /* background: linear-gradient(90deg, #2E9CCA 0%, #AAABBB 100%); */
-  transition-duration: 5s;
+  transition-duration: 1s;
   transition-delay: 0s;
-  transition-property: background-color;
+  transition-property: height, background-color;
 
 }
 
@@ -81,8 +81,8 @@ footer, .fixed-bottom{
 .Component:hover{
   border-color:#9CB700;
   background-color:#9CB700;
-  /* height: 25rem; */
-  width:25rem;
+  height: 25rem;
+  width: 25rem;
   border-radius: .5rem;
   z-index: 999;
   /* background: linear-gradient(90deg, rgba(65,65,65,1) 0%, rgba(255,30,0,1) 100%); */
@@ -109,7 +109,7 @@ iframe, .inputComponent, .ComponentYT{
 .row{
   margin: 1% 3%;  
   height: 80% !important;
-  /* background-color: #454545; */
+  background-color: #AAABBB;
 }  
   
 .rowB{
