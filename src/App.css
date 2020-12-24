@@ -44,28 +44,47 @@ footer, .fixed-bottom{
 
 
 .Component{
-  border-color:#c800d3;
-  border:1% solid #dafb61;
+  border-color:#dafb61;
   border-radius: .5rem;
   height: 30rem;
-  width: fit-content;
+  width:90%;
   z-index: 1;
   margin:1%;
-  width:90%;
-} 
+  
+  background: linear-gradient(90deg, rgba(255,30,0,1) 0%, rgba(65,65,65,1) 100%);
+  transition-duration: 5s;
+  transition-delay: 2s;
+  transition-property: width, height;
+
+}
+
+.imgComponent{
+  background: url="./images/HBcolors.png";
+}
+
 
 .Component:hover{
   border-color:#f1a61a;
+  height: 40rem;
+  width:90%;
   border-radius: .5rem;
-  ;
   z-index: 999;
-border-color: (rgb(2, 249, 10));
+  background: linear-gradient(90deg, rgba(65,65,65,1) 0%, rgba(255,30,0,1) 100%);
 } 
 
 .flexboxTest, .Component1{
-  background-color: #d35400;
+  /* background-color: #d35400; */
 }
 
+iframe, .inputComponent, .ComponentYT{
+  /* background-color: #222; */
+  border-collapse: solid;
+  border-color: #ff1e00;
+  border-style:groove;
+  border-width:.4rem;
+  padding: 1% 0;
+
+}
 .Component2{
   background-color: #4dd300;
 }
@@ -86,7 +105,7 @@ border-color: (rgb(2, 249, 10));
 .row{
   margin: 1% 3%;  
   height: 80% !important;
-  background-color: #454545;
+  /* background-color: #454545; */
 }  
   
 .rowB{
