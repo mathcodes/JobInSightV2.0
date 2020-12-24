@@ -1,3 +1,17 @@
+ines (62 sloc)  1.17 KB
+  
+:root {
+  --blue: #0067B6;
+  --ocean: #29648A; 
+  --primary: #29648A; 
+  --sky: #2E9CCA;
+  --magic: #25274D; 
+  --fading: #464866;
+  --cloud: #AAABB8; 
+  --lime: #9CB700; 
+  --night: #211412 ; 
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +28,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #211412;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -44,17 +58,18 @@ footer, .fixed-bottom{
 
 
 .Component{
-  border-color:#dafb61;
+  border-color:#25274D;
+ 
   border-radius: .5rem;
-  height: 30rem;
-  width:90%;
+  height: 20rem;
+  width:95%;
   z-index: 1;
   margin:1%;
   
-  background: linear-gradient(90deg, rgba(255,30,0,1) 0%, rgba(65,65,65,1) 100%);
+  /* background: linear-gradient(90deg, #2E9CCA 0%, #AAABBB 100%); */
   transition-duration: 5s;
-  transition-delay: 2s;
-  transition-property: width, height;
+  transition-delay: 0s;
+  transition-property: background-color;
 
 }
 
@@ -64,41 +79,30 @@ footer, .fixed-bottom{
 
 
 .Component:hover{
-  border-color:#f1a61a;
-  height: 40rem;
-  width:90%;
+  border-color:#9CB700;
+  background-color:#9CB700;
+  /* height: 25rem; */
+  width:25rem;
   border-radius: .5rem;
   z-index: 999;
-  background: linear-gradient(90deg, rgba(65,65,65,1) 0%, rgba(255,30,0,1) 100%);
+  /* background: linear-gradient(90deg, rgba(65,65,65,1) 0%, rgba(255,30,0,1) 100%); */
 } 
 
 .flexboxTest, .Component1{
-  /* background-color: #d35400; */
+  /* background-color: #29648A; */
 }
 
 iframe, .inputComponent, .ComponentYT{
   /* background-color: #222; */
   border-collapse: solid;
-  border-color: #ff1e00;
+  border-color: #9CB700;
   border-style:groove;
   border-width:.4rem;
   padding: 1% 0;
 
 }
 .Component2{
-  background-color: #4dd300;
-}
-
-.Component3{
-  background-color: #00d3c5;
-}
-
-.Component4{
-  background-color: #c800d3;
-}
-
-.Component5{
-  background-color: #d30004;
+  background-color: #9CB700;
 }
 
 
