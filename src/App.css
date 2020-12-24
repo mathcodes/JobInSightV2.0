@@ -44,20 +44,22 @@ footer, .fixed-bottom{
 
 
 .Component{
-  background-color:#c800d3;
-  background: #dafb61;
+  border-color:#c800d3;
+  border:1% solid #dafb61;
   border-radius: .5rem;
-  height: 100%;
+  height: 30rem;
+  width: fit-content;
   z-index: 1;
+  margin:1%;
+  width:90%;
 } 
 
 .Component:hover{
-  background-color:#f1a61a;
-  border-radius: 1rem;
-max-height: calc((window.innerHeight));
+  border-color:#f1a61a;
+  border-radius: .5rem;
+  ;
   z-index: 999;
 border-color: (rgb(2, 249, 10));
-  padding:-15%;
 } 
 
 .flexboxTest, .Component1{
@@ -82,16 +84,11 @@ border-color: (rgb(2, 249, 10));
 
 
 .row{
-  margin: 5% 10%;  
+  margin: 1% 3%;  
   height: 80% !important;
   background-color: #454545;
-  /* height: "window.innerHeight"-0.90*(window.innerHeight); */
+}  
+  
+.rowB{
+ margin-bottom: 5%; 
 }
-
-.row:hover{
-  padding: 6%;
-}
-  /* margin: .5% 1%;  
-  height: 40vmin;
-  background-color: #454545; */
-  /* height: "window.innerHeight"-0.90*(window.innerHeight); */
