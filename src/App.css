@@ -57,10 +57,12 @@ footer, .fixed-bottom{
 } 
 
 .Component:hover{
-  background-color:#4f4f4f;
+  background-color:#f1a61a;
   border-radius: 1rem;
-  height: 120%;
+  size: 150%;
   z-index: 999;
+
+  padding:2%;
 } 
 
 .flexboxTest, .Component1{

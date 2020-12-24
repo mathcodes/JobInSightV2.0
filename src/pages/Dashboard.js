@@ -71,10 +71,10 @@ function Dashboard() {
           </div>
         </div>
 
-        <div className="shadow col-3">
-          <div className=" Nav.header d-flex p-2 bd-highlight Component Component2">
+       
+          <div className="shadow col-3 Nav.header d-flex p-2 bd-highlight Component Component2">
             Component6.d
-          </div>
+         
         </div>
 			</div>
 			
