@@ -13,7 +13,7 @@ function App() {
       '<Dashboard>
       <NavBar/>
       </Dashboard>' to test before React Router is implemented*/}
-      <Dashboard>
+      <Dashboard >
       <NavBar/>
       </Dashboard>
     </div>

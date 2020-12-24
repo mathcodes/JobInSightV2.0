@@ -42,12 +42,7 @@ footer, .fixed-bottom{
   z-index: inherit 100;
 }
 
-.row{
-  margin: .5% 1%;  
-  height: 40vmin;
-  background-color: #454545;
-  /* height: "window.innerHeight"-0.90*(window.innerHeight); */
-}
+
 .Component{
   background-color:#c800d3;
   background: #dafb61;
@@ -59,10 +54,10 @@ footer, .fixed-bottom{
 .Component:hover{
   background-color:#f1a61a;
   border-radius: 1rem;
-  size: 150%;
+max-height: calc((window.innerHeight));
   z-index: 999;
-
-  padding:2%;
+border-color: (rgb(2, 249, 10));
+  padding:-15%;
 } 
 
 .flexboxTest, .Component1{
@@ -84,3 +79,19 @@ footer, .fixed-bottom{
 .Component5{
   background-color: #d30004;
 }
+
+
+.row{
+  margin: 5% 10%;  
+  height: 80% !important;
+  background-color: #454545;
+  /* height: "window.innerHeight"-0.90*(window.innerHeight); */
+}
+
+.row:hover{
+  padding: 6%;
+}
+  /* margin: .5% 1%;  
+  height: 40vmin;
+  background-color: #454545; */
+  /* height: "window.innerHeight"-0.90*(window.innerHeight); */
