@@ -1,11 +1,12 @@
 import React from "react";
+import "./styles.css";
 
 function NavBar() {
   return (
     <ul className="nav nav-pills nav-fill">
       <li className="nav-item nav-item1">
-        <a className="nav-link active" href="#!">
-          nav-item1
+        <a className={window.location.pathname ==="/" || window.location.pathname === "/home" ? "nav-link active" : "nav-link"} href="#!">
+          Home
         </a>
       </li>
       <li className="nav-item nav-item2">
