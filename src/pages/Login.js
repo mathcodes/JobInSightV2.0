@@ -1,13 +1,18 @@
-import React from 'react';
-import NavBar from '../components/NavBar';
+import React from "react";
+import Footer from "../components/Footer";
 
 function Login() {
   return (
-    <div>
-    <div className="d-flex p-2 bd-highlight flexboxTest">I'm a flexbox container!</div>
-    <NavBar/>
+    <div className="">
+      <div className="d-flex p-2 bd-highlight flexboxTest">
+        I'm a flexbox container!
+      </div>
+      <button type="button" className="btn btn-dark align-items-center">
+        Login or SignUp
+      </button>
+      <Footer />
     </div>
-    );
+  );
 }
 
 export default Login;

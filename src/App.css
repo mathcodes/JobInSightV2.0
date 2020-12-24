@@ -37,6 +37,48 @@
   }
 }
 
-.flexboxTest{
+footer, .fixed-bottom{
+  background-color: #333333;
+  z-index: inherit 100;
+}
+
+.row{
+  margin: .5% 1%;  
+  height: 40vmin;
+  background-color: #454545;
+  /* height: "window.innerHeight"-0.90*(window.innerHeight); */
+}
+.Component{
+  background-color:#c800d3;
+  background: #dafb61;
+  border-radius: .5rem;
+  height: 100%;
+  z-index: 1;
+} 
+
+.Component:hover{
+  background-color:#4f4f4f;
+  border-radius: 1rem;
+  height: 120%;
+  z-index: 999;
+} 
+
+.flexboxTest, .Component1{
   background-color: #d35400;
+}
+
+.Component2{
+  background-color: #4dd300;
+}
+
+.Component3{
+  background-color: #00d3c5;
+}
+
+.Component4{
+  background-color: #c800d3;
+}
+
+.Component5{
+  background-color: #d30004;
 }
