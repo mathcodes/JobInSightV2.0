@@ -6,12 +6,21 @@ function Dashboard() {
   return (
     <div class="container-fluid">
       <NavBar />
+       {/* -------- ROW FIRST-HEADER-------- */}
+       <div className="row">
+       <div className="col-sm Component inputComponent">
+        <header className="Header mainHeader">
+          <h6>User Name: </h6><h1>John Doe</h1>
+          <h6>Location: </h6><h4>Carrboro, NC </h4>
+        </header>
+       </div>
+
+</div>
       {/* -------- ROW -------- */}
       <div className="row jumbotron">
-        <div className="col-sm Component ComponentYT">
-        <header className="Header">User Name</header>
-
-             </div>
+      <div className="col-sm Component ComponentYT align-content-center">
+      <iframe width="560" height="315" title="mathcodesProjects" src="https://www.youtube.com/embed/videoseries?list=PLBrVt1MNs5px1DyLj2xtz3YFZyJF0ZlvO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
              <div className="col-sm Component imgComponent1">
              <div class="card">
              <div class="card-body">
@@ -27,16 +36,13 @@ function Dashboard() {
            </div>
 
              </div>
-             <div className="col-sm Component inputComponent">
-              <header className="Header">User Name</header>
-             </div>
-      </div>
+
+     
+
 
       {/* -------- ROW -------- */}
       <div className="row">
-        <div className="col-sm Component ComponentYT align-content-center">
-        <iframe width="560" height="315" title="mathcodesProjects" src="https://www.youtube.com/embed/videoseries?list=PLBrVt1MNs5px1DyLj2xtz3YFZyJF0ZlvO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+        
         <div className="col-sm Component">A3</div>
       </div>
 
@@ -62,7 +68,7 @@ function Dashboard() {
 
     
       <Footer />
-    </div>
+      </div>  </div>
   );
 }
 

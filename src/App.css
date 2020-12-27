@@ -1,5 +1,3 @@
-ines (62 sloc)  1.17 KB
-  
 :root {
   --blue: #0067B6;
   --ocean: #29648A; 
@@ -9,11 +7,16 @@ ines (62 sloc)  1.17 KB
   --fading: #464866;
   --cloud: #AAABB8; 
   --lime: #9CB700; 
-  --night: #211412 ; 
+  --night: #111 ; 
 }
 
 .App {
   text-align: center;
+}
+
+.mainHeader{
+  text-align: left;
+  padding-left: 5%;
 }
 
 .App-logo {
@@ -28,7 +31,7 @@ ines (62 sloc)  1.17 KB
 }
 
 .App-header {
-  background-color: #211412;
+  background-color: #111;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -61,7 +64,7 @@ footer, .fixed-bottom{
   border-color:#25274D;
  
   border-radius: .5rem;
-  height: 20rem;
+  height: fit-content;
   width:95%;
   z-index: 1;
   margin:1%;
@@ -69,7 +72,7 @@ footer, .fixed-bottom{
   /* background: linear-gradient(90deg, #2E9CCA 0%, #AAABBB 100%); */
   transition-duration: 5s;
   transition-delay: 0s;
-  transition-property: background-color;
+  transition-property: background-color, color;
 
 }
 
@@ -81,8 +84,9 @@ footer, .fixed-bottom{
 .Component:hover{
   border-color:#9CB700;
   background-color:#9CB700;
+  color: #111;
   /* height: 25rem; */
-  width:25rem;
+  /* width:25rem; */
   border-radius: .5rem;
   z-index: 999;
   /* background: linear-gradient(90deg, rgba(65,65,65,1) 0%, rgba(255,30,0,1) 100%); */
