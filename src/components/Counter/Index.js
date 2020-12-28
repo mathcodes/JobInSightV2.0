@@ -14,7 +14,7 @@ class Counter extends React.Component {
   };
 
   // The render method returns the JSX that should be rendered
-  render() {
+  render() { 
     return (
       <div className="card text-center">
         <div className="card-header bg-primary text-white">

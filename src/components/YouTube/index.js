@@ -4,8 +4,8 @@ import React from "react";
 function YouTube() {
   return (
     <iframe
-    width= "fit-content"
-    height="70%"
+    width= "100%"
+    height="100%"
       title="mathcodesProjects"
       src="https://www.youtube.com/embed/PkZNo7MFNFg"
       frameborder="0"

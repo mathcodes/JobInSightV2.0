@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer/Footer";
 import WikiSearch from "../components/WikiSearch/index.js";
+import Counter from "../components/Counter/index.js";
 import FullRowHeader from "../components/FullRowHeader/index.js";
 import Test from "../components/Test/index.js";
 import YouTube from "../components/YouTube/index.js";
@@ -32,7 +33,7 @@ function Dashboard() {
       {/* -------- ROW -------- */}
       <div className="row">
         {/* -------- CARD -------- */}
-        <div className="col col-lg Component imgComponent1">
+        <div className="col col-lg Component">
           <div class="card">
             <div class="card-body">
               <h4 class="card-title text-muted">Card title</h4>
@@ -71,9 +72,9 @@ function Dashboard() {
       {/* -------- ROW -------- */}
       <div className="row">
         <div id="C1" className="col col-sm Component">
-          C1
+        <WikiSearch />
         </div>
-        <div className="col-sm Component">C2</div>
+        <div className="col-sm Component"><Counter /></div>
         <div className="col-sm Component">C3</div>
         <div className="col-sm Component">C4</div>
       </div>

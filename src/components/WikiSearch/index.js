@@ -52,7 +52,7 @@ function Search() {
   return (
     <ArticleContext.Provider value={articleState}>
       <div>
-        <Container style={{ minHeight: "100vh" }}>
+        <Container style={{ minHeight: "20vh" }}>
           <h1 className="text-center">Search For Anything on Wikipedia</h1>
           <Alert type="danger" style={{ opacity: error ? 1 : 0, marginBottom: 10 }}>
             {error}

@@ -43,7 +43,7 @@ a {
 
 .App-header {
   /* background-color: #111; */
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: grid;
   flex-direction: row;
   align-items: center;
@@ -107,8 +107,4 @@ footer,
   color: white;
   z-index: 999;
 } */
-
-.row {
-  height: 80% !important;
-}
 

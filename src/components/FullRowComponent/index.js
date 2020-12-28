@@ -22,12 +22,16 @@ function FullRowComponent(props) {
           <div className="row">
           <h2>Saved / Most Recent:</h2>
           <div className="col colTop colTop1">
+          1
           </div>
           <div className="col colTop colTop2">
+          2
           </div>
           <div className="col colTop colTop3">
+          3
           </div>
           <div className="col colTop colTop4">
+          4
           </div>
           </div>
           </div>
