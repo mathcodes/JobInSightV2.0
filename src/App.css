@@ -1,13 +1,13 @@
 :root {
-  --blue: #0067B6;
-  --ocean: #29648A; 
-  --primary: #29648A; 
-  --sky: #2E9CCA;
-  --magic: #25274D; 
+  --blue: #0067b6;
+  --ocean: #29648a;
+  --primary: #29648a;
+  --sky: #2e9cca;
+  --magic: #25274d;
   --fading: #464866;
-  --cloud: #AAABB8; 
-  --lime: #9CB700; 
-  --night: #111 ; 
+  --cloud: #aaabb8;
+  --lime: #9cb700;
+  --night: #111;
 }
 
 .App {
@@ -15,7 +15,7 @@
   background-color: #111111;
 }
 
-.mainHeader{
+.mainHeader {
   text-align: left;
   padding-left: 5%;
 }
@@ -26,13 +26,14 @@
 }
 
 a {
-  color: #29648A;
+  color: #29648a;
   text-decoration: underline;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #29648A;
+  background-color: #29648a;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -43,8 +44,8 @@ a {
 .App-header {
   background-color: #111;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -64,63 +65,49 @@ a {
   }
 }
 
-footer, .fixed-bottom{
-  background-color: #29648A;
+footer,
+.fixed-bottom {
+  background-color: #29648a;
   z-index: inherit 100;
 }
 
-
-.Component{
- background-color: #29648A;
- padding: 1% 2%;
- color: #fff;
-  border-radius: .5rem;
+.Component {
+  padding: 1% 2%;
+  color: #fff;
+  border-radius: 0.5rem;
   height: fit-content;
-  width:95%;
+  width: 95%;
   z-index: 1;
-  margin:1%;
-  
-  /* background: linear-gradient(90deg, #2E9CCA 0%, #AAABBB 100%); */
+  margin: 1%;
+  box-shadow: 10px 10px;
+    background: linear-gradient(
+    300deg,
+    rgba(34, 34, 34, 1) 0%,
+    #29648a 54%,
+    #29648a 66%,
+    rgba(17, 17, 17, 1) 100%
+  );
   transition-duration: 1s;
   transition-delay: 0s;
-  transition-property: background-color, color, border-color;
-
+  /* transition-property: background-color, color, border-color; */
 }
 
-.imgComponent{
-  background: url="./images/HBcolors.png";
+.wrapper {
+  background-color: #111;
 }
 
-
-.Component:hover{
-  /* border-color:#2E9CCA; */
-  background-color:#29648A;
-  color: #111;
-  /* height: 25rem; */
-  /* width:25rem; */
+.Component:hover {
+  box-shadow: 10px 10px;
+  background-color: #29648a;
+  color: white;
   z-index: 999;
-  /* background: linear-gradient(90deg, rgba(65,65,65,1) 0%, rgba(255,30,0,1) 100%); */
-} 
-
-iframe, .inputComponent, .ComponentYT{
-  /* background-color: #222;
-  border-collapse: solid; */
-  /* border-color: #464866; */
-  /* border-style:groove; */
-  border-width:.4rem;
-  padding: 1% 0;
-
-}
-.Component2{
-  background-color: #464866;
 }
 
-
-.row{
-  margin: 1% 3%;  
+.row {
+  margin: 1% 3%;
   height: 80% !important;
-}  
-  
-.rowB{
- margin-bottom: 5%; 
+}
+
+.rowB {
+  margin-bottom: 5%;
 }
