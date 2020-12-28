@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import ArticleContext from "../../utils/ArticleContext";
-import "./style.css";
+
 // importing above
 // using the useContext hook and we specifyt as the AC as the article we wanna use and then we are going 
 // to destructure all of that into title and url variaables
-function SearchResults() {
+function Test() {
   const {title, url} = useContext(ArticleContext);
   return (
     <ul className="list-group search-results">
@@ -12,10 +12,10 @@ function SearchResults() {
       {/* // gives us nice neat access to the title and url properties of that article we didnt 
       // have to accept it as 
       // props and make use of our title and url values inside of our return block here. */}
-        <h2>{title}-Test</h2>
+        <h2>{title}</h2>
         <a href={url}>{url}</a>
       </li>
     </ul>
   );
 }
-export default SearchResults;
+export default Test;

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Container from "../../components/Container";
-import SearchForm from "../../components/SearchForm";
-import SearchResults from "../../components/SearchResults";
-import Alert from "../../components/Alert";
+import Container from "../Container";
+import SearchForm from "../SearchForm";
+import SearchResults from "../SearchResults";
+import Alert from "../Alert";
 import ArticleContext from "../../utils/ArticleContext";
 import API from "../../utils/API";
 
@@ -10,8 +10,7 @@ import API from "../../utils/API";
 function Search() {
   const [articleState, setArticleState] = useState({  // |
     title: "",                                        // |
-    url: "",
-    username:""                                         // | 
+    url: ""                                           // | 
   });
 // in essence the goal of this is to make articleState available in an article context
 // so we have created an ArticleContext to do that for us: src/util/ArticleContext.js
