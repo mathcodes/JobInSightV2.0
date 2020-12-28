@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer/Footer";
 import WikiSearch from "../components/WikiSearch/index.js";
+import FullRowHeader from "../components/FullRowHeader/index.js";
 import Test from "../components/Test/index.js";
 import YouTube from "../components/YouTube/index.js";
 import Calendar from "../components/Calendar/index.js";
@@ -11,13 +12,8 @@ function Dashboard() {
     <div class="container-fluid">
       {/* -------- ROW FIRST-HEADER-------- */}
       <div className="row">
-        <div className="col-sm Component inputComponent">
-          <header className="Header mainHeader">
-            <h6>User Name: </h6>
-            <h1>John Doe</h1>
-            <h6>Location: </h6>
-            <h4>Carrboro, NC </h4>
-          </header>
+        <div className="col-sm colHeader Component">
+          <FullRowHeader />
         </div>
       </div>
       {/* -------- ROW -------- */}
@@ -65,7 +61,7 @@ function Dashboard() {
         </div>
       </div>
 
-      {/* -------- ROW -------- */}
+      {/* -------- FriendRefactor -------- */}
       <div className="row">
         <div className="col col-sm Component">
         <FriendRefactor/>

@@ -7,6 +7,6 @@
 
 .nav-item:hover {
   text-emphasis: none;
-  background-color: #AAABBB;
+  background-color: #fff;
   border-radius: .1rem;
 }

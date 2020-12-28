@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import FriendCard from "../FriendCard";
+import FullRowComponent from "../FullRowComponent";
 import Wrapper from "../Wrapper";
 import Title from "../Title";
 import friends from "../../friends.json";
-import "./style.css";
 
-class FriendRefactor extends Component {
+class FullRowHeader extends Component {
   // Setting this.state.friends to the friends json array
   state = {
     friends
@@ -22,16 +21,18 @@ class FriendRefactor extends Component {
   render() {
     return (
       <Wrapper>
-      
         {this.state.friends.map(friend => (
-          <FriendCard
+          <FullRowComponent
             removeFriend={this.removeFriend}
             id={friend.id}
             key={friend.id}
             name={friend.name}
             image={friend.image}
             occupation={friend.occupation}
+            url={friend.location}
             location={friend.location}
+            youTubeSrc={friend.youTubeSrc}
+            tester={friend.tester}
           />
         ))}
       </Wrapper>
@@ -39,4 +40,4 @@ class FriendRefactor extends Component {
   }
 }
 
-export default FriendRefactor;
+export default FullRowHeader;

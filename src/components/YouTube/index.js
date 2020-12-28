@@ -4,10 +4,10 @@ import React from "react";
 function YouTube() {
   return (
     <iframe
-    width= "100%"
-    height="600"
+    width= "fit-content"
+    height="70%"
       title="mathcodesProjects"
-      src="https://www.youtube.com/embed/videoseries?list=PLBrVt1MNs5px1DyLj2xtz3YFZyJF0ZlvO"
+      src="https://www.youtube.com/embed/PkZNo7MFNFg"
       frameborder="0"
       allow="autoplay; encrypted-media"
       allowfullscreen

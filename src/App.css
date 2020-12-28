@@ -1,7 +1,7 @@
 :root {
   --blue: #0067b6;
   --ocean: #29648a;
-  --primary: #29648a;
+  --primary: hsl(204, 54%, 35%);
   --sky: #2e9cca;
   --magic: #25274d;
   --fading: #464866;
@@ -74,7 +74,7 @@ footer,
 .Component {
   padding: 1% 2%;
   color: #fff;
-  height: (calc((fit-content)+15% (window))) px;
+  /* height: (calc((fit-content)+15% (window))) px; */
   /* height: calc((fit-content)+5%(window.innerHeight));  */
   /* height 593.047px */
   width: 95%;
@@ -112,6 +112,3 @@ footer,
   height: 80% !important;
 }
 
-.rowB {
-  margin-bottom: 5%;
-}
