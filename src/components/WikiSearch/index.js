@@ -19,7 +19,7 @@ function Search() {
 
   // When the component mounts, update the title to be Wikipedia Searcher
   useEffect(() => {
-    document.title = "Wikipedia Searcher";
+    document.title = "JobInSight";
 
     if (!search) {
       return;

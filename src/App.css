@@ -12,7 +12,7 @@
 
 .App {
   text-align: center;
-  background-color: #111111;
+  /* background-color: #111111; */
 }
 
 .mainHeader {
@@ -42,7 +42,7 @@ a {
 }
 
 .App-header {
-  background-color: #111;
+  /* background-color: #111; */
   min-height: 100vh;
   display: grid;
   flex-direction: row;
@@ -74,37 +74,41 @@ footer,
 .Component {
   padding: 1% 2%;
   color: #fff;
-  border-radius: 0.5rem;
-  height: fit-content;
+  height: (calc((fit-content)+15% (window))) px;
+  /* height: calc((fit-content)+5%(window.innerHeight));  */
+  /* height 593.047px */
   width: 95%;
   z-index: 1;
   margin: 1%;
-  box-shadow: 10px 10px;
-    background: linear-gradient(
+  box-shadow: 0 3px 6px #fff, 0 3px 6px #fff;
+
+  background: linear-gradient(
     300deg,
-    rgba(34, 34, 34, 1) 0%,
-    #29648a 54%,
-    #29648a 66%,
+    rgba(34, 34, 34, .8) 0%,
+    rgba(41, 100, 138, .5) 50%,
     rgba(17, 17, 17, 1) 100%
   );
-  transition-duration: 1s;
+  border-style: inset;
+  border-width: 0.01rem;
+  border-radius: 0.5rem;
+  transition-duration: 5s;
   transition-delay: 0s;
-  /* transition-property: background-color, color, border-color; */
 }
 
 .wrapper {
   background-color: #111;
 }
-
+/* 
 .Component:hover {
+  box-shadow: 0 3px 6px #fff, 0 3px 6px #fff;
+  transition-property: box-shadow;
   box-shadow: 10px 10px;
   background-color: #29648a;
   color: white;
   z-index: 999;
-}
+} */
 
 .row {
-  margin: 1% 3%;
   height: 80% !important;
 }
 

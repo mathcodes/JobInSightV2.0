@@ -1,3 +1,12 @@
-.nav, .nav-pills, .nav-fill{
-text-emphasis: none;
+.nav,
+.nav-pills,
+.nav-fill {
+  text-emphasis: none;
+  background-color: #111;
+}
+
+.nav-item:hover {
+  text-emphasis: none;
+  background-color: #AAABBB;
+  border-radius: .1rem;
 }
