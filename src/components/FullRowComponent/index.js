@@ -16,6 +16,7 @@ function FullRowComponent(props) {
             <h4>{props.occupation}</h4>
             <strong>Location:</strong>
             <h4>{props.location}</h4>
+            
           </div>
 
           <div className="col-9">

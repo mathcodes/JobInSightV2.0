@@ -13,7 +13,7 @@ class Dashboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sidebarOpen: true,
+      sidebarOpen: false,
       sidebar: (
         <div class="btn-group-vertical">
           <btn className="btnSideBar">Dashboard</btn>
@@ -26,8 +26,11 @@ class Dashboard extends React.Component {
           <btn className="btnSideBar">Documents</btn>
           <btn className="btnSideBar">Links</btn>
           <btn className="btnSideBar">Logout</btn>
+          <btn className="btnSideBar"><button className="sideBarButton" onClick={() => this.onSetSidebarOpen(false)}>CLOSE
+          </button></btn>
         </div>
       ),
+      onSetSidebarOpen: false,
     };
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
   }
@@ -45,14 +48,13 @@ class Dashboard extends React.Component {
         onSetOpen={this.onSetSidebarOpen}
         styles={{ sidebar: { background: "#222"} }}
       >
-        <button onClick={() => this.onSetSidebarOpen(true)}><i class="fas fa-bars" />
-        </button>
         </Sidebar>
         <div class="container-fluid">
           {/* -------- ROW FIRST-HEADER-------- */}
-          <div className="row">
-            <div className="col-sm colHeader Component">
-              <FullRowHeader />
+          <div className="row"><button className="sideBarButton" onClick={() => this.onSetSidebarOpen(true)}>MENU
+          </button>
+            <div className="col col-sm colHeader Component">
+            <FullRowHeader />
             </div>
           </div>
           {/* -------- ROW -------- */}

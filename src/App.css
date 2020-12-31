@@ -80,14 +80,9 @@ footer,
   width: 95%;
   z-index: 1;
   margin: 1%;
-  box-shadow: 0 3px 6px #fff, 0 3px 6px #fff;
+  /* box-shadow: 0 3px 6px #fff, 0 3px 6px #fff; */
 
-  background: linear-gradient(
-    300deg,
-    rgba(34, 34, 34, .8) 0%,
-    rgba(41, 100, 138, .5) 50%,
-    rgba(17, 17, 17, 1) 100%
-  );
+  background-color: #111111;
   border-style: inset;
   border-width: 0.01rem;
   border-radius: 0.5rem;
@@ -127,8 +122,16 @@ footer,
 }
 .btn-group-vertical{
   opacity: 1;
+  padding-top:3rem;
 }
-.btn-group-vertica:hover{
+.btn-group-vertical:hover{
   opacity: 1;
 }
-
+.sideBarButton{
+background-color:#9cb700;
+  color: #222222;
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 2000;
+  height: 3rem;
+}
