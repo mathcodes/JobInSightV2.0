@@ -108,3 +108,27 @@ footer,
   z-index: 999;
 } */
 
+.btnSideBar{
+  background-color:#222222;
+  width:30rem;
+  height:5rem;
+  opacity: .8;
+  color: #9cb700;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+.btnSideBar:hover{
+  background-color:#9cb700;
+  color: #222222;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 1;
+}
+.btn-group-vertical{
+  opacity: 1;
+}
+.btn-group-vertica:hover{
+  opacity: 1;
+}
+
