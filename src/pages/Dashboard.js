@@ -7,7 +7,9 @@ import FullRowHeader from "../components/FullRowHeader/index.js";
 import YouTube from "../components/YouTube/index.js";
 import Calendar from "../components/Calendar/index.js";
 import FriendRefactor from "../components/Cards/index.js";
+import DropDown from "../components/DropDown/index.js";
 import Card from "../components/Card/index.js";
+import Form from "../components/Form/index.js";
 import Sidebar from "react-sidebar";
 
 class Dashboard extends React.Component {
@@ -48,22 +50,23 @@ class Dashboard extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container-fluid">
         <Sidebar
+          className="sideBarClass"
           sidebar={this.state.sidebar}
           open={this.state.sidebarOpen}
           onSetOpen={this.onSetSidebarOpen}
           styles={{ sidebar: { background: "#222", position: "absolute"} }}
-        ></Sidebar>
+        ><button id="sidebar-toggle" 
+        className="fixed-top sideBarButton"
+        onClick={() => this.onSetSidebarOpen(true)}
+      >
+        MENU
+      </button></Sidebar>
 
         {/* -------- ROW FIRST-HEADER-------- */}
         <div className="row">
-          <button
-            className="fixed-top sideBarButton"
-            onClick={() => this.onSetSidebarOpen(true)}
-          >
-            MENU
-          </button>
+          
           <div className="col col-sm colHeader Component">
             <FullRowHeader />
           </div>
@@ -78,9 +81,9 @@ class Dashboard extends React.Component {
           <div className="col Component">
             <WikiSearch />
           </div>
-          {/* -------- Calendar -------- */}
+          {/* ---------- Form ---------- */}
           <div className="col Component">
-            <Calendar />
+            <Form />
           </div>
           {/* --------  YOUTUBE -------- */}
           <div className="col Component">
@@ -98,9 +101,9 @@ class Dashboard extends React.Component {
           <div className="col col-sm Component">
             <FriendRefactor />
           </div>
-          {/* -------- WikiSearch -------- */}
+          {/* -------- DropDown -------- */}
           <div id="C1" className="col col-sm Component">
-            <WikiSearch />
+            <DropDown />
           </div>
           {/* -------- Counter -------- */}
           <div className="col-sm Component">

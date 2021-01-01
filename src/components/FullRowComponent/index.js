@@ -17,10 +17,10 @@ function FullRowComponent(props) {
           <div className="col-3">
             <strong>User Name:</strong>
             <h2>{props.name}</h2>
-            <strong>Interest:</strong>
+            {/*<strong>Interest:</strong>
             <h4>{props.occupation}</h4>
             <strong>Location:</strong>
-            <h4>{props.location}</h4>
+            <h4>{props.location}</h4>*/}
             <strong>Title and URL:</strong>
             <h4>{url}, {title}, {username}</h4>
             

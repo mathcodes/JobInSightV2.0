@@ -116,7 +116,7 @@ footer,
   opacity: 1;
 }
 .sideBarButton{
-  background: linear-gradient(90deg, rgba(156,183,0,1) 5%, rgba(34,34,34,.5) 15%, rgba(34,34,34,0.0) 100%);
+  /* background: linear-gradient(90deg, rgba(156,183,0,1) 5%, rgba(34,34,34,.5) 15%, rgba(34,34,34,0.0) 100%); */
   color: #222222;
   font-size: .5rem;
   text-align: left;
@@ -188,7 +188,7 @@ footer,
  /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
   .Component {
-    height: 14rem;
-    width: 18rem;
+    height: 20rem;
+    width: 25rem;
  }
 }

@@ -10,7 +10,7 @@ function YouTube() {
       src="https://www.youtube.com/embed/PkZNo7MFNFg"
       frameborder="0"
       allow="autoplay; encrypted-media"
-      allowfullscreen
+      allowFullScreen
     ></iframe>
   );
 }
