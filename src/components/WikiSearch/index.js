@@ -10,8 +10,8 @@ import "./style.css";
 //change the state... title and URL of the number
 function Search() {
   const [articleState, setArticleState] = useState({  // |
-    title: "",                                        // |
-    url: ""                                           // | 
+    title: "WStitle-test",                                        // |
+    url: "WSurl-test"                                           // | 
   });
 // in essence the goal of this is to make articleState available in an article context
 // so we have created an ArticleContext to do that for us: src/util/ArticleContext.js
@@ -37,7 +37,7 @@ function Search() {
         }
         setArticleState({ //now using these 2 pieces of state @ same time
           title: res.data[1][0],
-          url: res.data [3][0]
+          url: res.data[3][0]
         });
       })
       .catch(err => setError(err));

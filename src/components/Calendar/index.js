@@ -9,7 +9,7 @@ function Calendar() {
       title="Calendar Title"
       src="https://calendar.google.com/calendar/embed?src=jonpchristie%40gmail.com&ctz=America%2FNew_York"
       width= "100%"
-      height= "100%"
+      height= "250px"
       frameborder="0"
       scrolling="yes"
     ></iframe>

@@ -6,10 +6,12 @@ class Form extends Component {
   state = {
     firstName: "",
     lastName: "",
-    password: ""
+    password: "",
+    selectOne: "",
+    selectTwo: ""
   };
 
-  handleInputChange = event => {
+  handleInputChange = (event) => {
     // Getting the value and name of the input which triggered the change
     let value = event.target.value;
     const name = event.target.name;
@@ -19,22 +21,22 @@ class Form extends Component {
     }
     // Updating the input's state
     this.setState({
-      [name]: value
+      [name]: value,
     });
   };
 
-  handleFormSubmit = event => {
+  handleFormSubmit = (event) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
     if (!this.state.firstName || !this.state.lastName) {
       alert("Fill out your first and last name please!");
     } else if (this.state.password.length < 6) {
       alert(
-        `Choose a more secure password ${this.state.firstName} ${this.state
-          .lastName}`
+        `Choose a more secure password ${this.state.firstName} ${this.state.lastName}`
       );
     } else {
       alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
+      alert(`Hey hey ${this.state.selectOne}`)
     }
 
     this.setState({
@@ -50,9 +52,9 @@ class Form extends Component {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
       <div>
-        <p>
-          Hello {this.state.firstName} {this.state.lastName}
-        </p>
+        <h5>
+          Hello {this.state.firstName} {this.state.lastName}. I see are on a journey to roll forward with {this.state.SelectOne}. And {this.state.SelectTwo}? I thought so!
+        </h5>
         <form className="form">
           <input
             value={this.state.firstName}
@@ -75,20 +77,24 @@ class Form extends Component {
             type="password"
             placeholder="Password"
           />
-          <select 
+          <select
             className="custom-select"
             value={this.state.SelectOne}
-            name="selectOne"
+            name="SelectOne"
             onChange={this.handleInputChange}
-            type="selectOne"
+            type="SelectOne"
             placeholder="SelectOne"
           >
-          <option selected>Choose one:</option>
-          <option value="job">I am looking for a job.</option>
-          <option value="education">I am looking to further my education.</option>
-          <option value="interests">I am interested in expanding my interests.</option>
-      </select>
-      <select 
+            <option selected>Choose one:</option>
+            <option value="finding a new career">I am looking for a job.</option>
+            <option value="furthering your education">
+              I am looking to further my education.
+            </option>
+            <option value="more interests">
+              I am interested in expanding my interests.
+            </option>
+          </select>
+          <select
             className="custom-select"
             value={this.state.SelectTwo}
             name="SelectTwo"
@@ -96,10 +102,10 @@ class Form extends Component {
             type="SelectTwo"
             placeholder="SelectTwo"
           >
-          <option selected>Choose one:</option>
-          <option value="create">I like to create things.</option>
-          <option value="complete">I like to complete tasks.</option>
-      </select>
+            <option selected>Choose one:</option>
+            <option value="create">I like to create things.</option>
+            <option value="complete">I like to complete tasks.</option>
+          </select>
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>
       </div>

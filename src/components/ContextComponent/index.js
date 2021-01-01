@@ -5,16 +5,22 @@ import CCSearchResults from "../CCSearchResults";
 // import Alert from "../Alert";
 import ArticleContext from "../../utils/ArticleContext";
 import YouTubeAPI from "../../utils/YouTubeAPI";
+import "./style.css";
 
 //change the state... title and URL of the number
-function YouTube() {
+function ContextComponent() {
   const [articleState, setArticleState] = useState({  // |
-    title: "",                                        // |
-    url: ""                                           // | 
+    title: "CCtitle",                                        // 
+    username: "CCusername",
+    html: "CChtml",
+    type:"",
+    width:0,
+    height: 0                                           // | 
   });
+  
 // in essence the goal of this is to make articleState available in an article context
 // so we have created an ArticleContext to do that for us: src/util/ArticleContext.js
-  const [search, setSearch] = useState("youTube");
+  const [search, setSearch] = useState("ContextComponent");
   const [Error, setError] = useState("");
 
   // When the component mounts, update the title to be Wikipedia Searcher
@@ -36,7 +42,10 @@ YouTubeAPI.searchTerms(search)
         }
         setArticleState({ //now using these 2 pieces of state @ same time
           title: res.data[1][0],
-          url: res.data[2][0]
+          html: res.data[27][0],
+          type: res.data[3][0],
+          height: res.data[4][0],
+          width: res.data[5][0]
         });
       })
       .catch(err => setError(err));
@@ -51,7 +60,7 @@ YouTubeAPI.searchTerms(search)
   };
   return (
     <ArticleContext.Provider value={articleState}>
-    <h5>YouTube</h5>
+    <h5>ContextComponent</h5>
       <div>
         <Container style={{ minHeight: "" }}>
           <CCSearchForm
@@ -66,4 +75,4 @@ YouTubeAPI.searchTerms(search)
   );
 }
 
-export default YouTube;
+export default ContextComponent;

@@ -1,14 +1,16 @@
 import React from "react";
 import Footer from "../components/Footer/Footer";
-import WikiSearch from "../components/WikiSearch/index.js";
-import Counter from "../components/Counter/index.js";
+// import WikiSearch from "../components/WikiSearch/index.js";
+// import Counter from "../components/Counter/index.js";
 import FullRowHeader from "../components/FullRowHeader/index.js";
 // import Test from "../components/Test/index.js";
 import YouTube from "../components/YouTube/index.js";
 import Calendar from "../components/Calendar/index.js";
 import FriendRefactor from "../components/Cards/index.js";
-import DropDown from "../components/DropDown/index.js";
-import Card from "../components/Card/index.js";
+import GifSearchResultContainer from "../components/GifSearchResultContainer/index.js";
+// import ContextComponent from "../components/ContextComponent/index.js";
+// import DropDown from "../components/DropDown/index.js";
+// import Card from "../components/Card/index.js";
 import Form from "../components/Form/index.js";
 import Sidebar from "react-sidebar";
 
@@ -18,7 +20,8 @@ class Dashboard extends React.Component {
     this.state = {
       sidebarOpen: false,
       sidebar: (
-        <div class="btn-group-vertical">
+        <div className="btn-group-vertical SBstyles">
+          <btn className="btnSideBar" onClick={() => this.onSetSidebarOpen(false)}>Close</btn>
           <btn className="btnSideBar">Dashboard</btn>
           <btn className="btnSideBar">Calendar</btn>
           <btn className="btnSideBar">YouTube</btn>
@@ -29,14 +32,7 @@ class Dashboard extends React.Component {
           <btn className="btnSideBar">Documents</btn>
           <btn className="btnSideBar">Links</btn>
           <btn className="btnSideBar">Logout</btn>
-          <btn className="btnSideBar">
-            <button
-              className="sideBarButtonClose"
-              onClick={() => this.onSetSidebarOpen(false)}
-            >
-              CLOSE
-            </button>
-          </btn>
+          <btn className="btnSideBar" onClick={() => this.onSetSidebarOpen(false)}>Close</btn>
         </div>
       ),
       onSetSidebarOpen: false,
@@ -56,59 +52,65 @@ class Dashboard extends React.Component {
           sidebar={this.state.sidebar}
           open={this.state.sidebarOpen}
           onSetOpen={this.onSetSidebarOpen}
-          styles={{ sidebar: { background: "#222", position: "absolute"} }}
-        ><button id="sidebar-toggle" 
-        className="fixed-top sideBarButton"
-        onClick={() => this.onSetSidebarOpen(true)}
-      >
-        MENU
-      </button></Sidebar>
+          styles={{ sidebar: { background: "#222", position: "absolute" } }}
+        >
+          <button
+            id="sidebar-toggle"
+            className="fixed-top sideBarButton"
+            onClick={() => this.onSetSidebarOpen(true)}
+          >
+            MENU
+          </button>
+        </Sidebar>
 
         {/* -------- ROW FIRST-HEADER-------- */}
         <div className="row">
-          
-          <div className="col col-sm colHeader Component">
+          <div className="col col-sm colHeader">
             <FullRowHeader />
           </div>
         </div>
         {/* -------- ROW Rest of Them-------- */}
         <div className="row justify-content-md-center row-cols-1 row-cols-sm-4 row-cols-md-4">
           {/* -------- Calendar -------- */}
-          <div className="col Component">
+          <div id="Calendar" className="col Component">
             <Calendar />
           </div>
-          {/* -------- WikiSearch ------ */}
-          <div className="col Component">
-            <WikiSearch />
-          </div>
-          {/* ---------- Form ---------- */}
-          <div className="col Component">
+          {/* -------- ContextComponent ------ 
+          <div id="ContextComponent" className="col Component">
+            <ContextComponent />
+          </div>*/}
+          {/* ---------- Form ----------*/}
+          <div id="Form" className="col Component">
             <Form />
-          </div>
+          </div> 
+          {/* ---------- GifSearchResultContainer ----------*/}
+          <div id="GifSearchResultContainer" className="col Component">
+            <GifSearchResultContainer />
+          </div> 
           {/* --------  YOUTUBE -------- */}
-          <div className="col Component">
+          <div id="YouTube" className="col Component">
             <YouTube />
           </div>
-          {/* ----------  CARD  -------- */}
-          <div className="col Component">
+          {/* ----------  CARD  -------- 
+          <div id="Card" className="col Component">
             <Card />
-          </div>
-          {/* ------  WikiSearch  ------ */}
-          <div className="col col-sm Component">
+          </div>*/}
+          {/* ------  WikiSearch  ------ 
+          <div id="WikiSearch" className="col col-sm Component">
             <WikiSearch />
-          </div>
+          </div>*/}
           {/*  ---- FriendRefactor ----  */}
-          <div className="col col-sm Component">
+          <div id="FriendRefactor" className="col col-sm Component">
             <FriendRefactor />
           </div>
-          {/* -------- DropDown -------- */}
-          <div id="C1" className="col col-sm Component">
+          {/* -------- DropDown -------- 
+          <div id="DropDown"  className="col col-sm Component">
             <DropDown />
-          </div>
-          {/* -------- Counter -------- */}
-          <div className="col-sm Component">
+          </div>*/}
+          {/* -------- Counter --------
+          <div id="Counter" className="col-sm Component">
             <Counter />
-          </div>
+          </div> */}
           {/* -------- FILLER -------- */}
           <div className="col-sm Component">FILLER</div>
           {/* -------- FILLER -------- */}

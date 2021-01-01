@@ -1,0 +1,9 @@
+.container{
+    max-height: 10rem;
+    overflow: scroll;
+}
+
+.list-group, .list-group-item{
+    margin:3%;
+    padding:3%;
+}

@@ -59,32 +59,54 @@ a {
 }
 
 .colHeader{
-  margin-top: 2rem;
-}
-
-footer,
-.fixed-bottom {
-  background-color: #29648a;
-  z-index: inherit 100;
-}
-.Component {
+  margin-top: 1rem;
   padding: 1% 1%;
   color: #fff;
-  height: 18rem;
+  /* height: (calc((fit-content)+ (155%)*(window))) px; */
   width: 18rem;
   /* width: 100%; */
   /* box-shadow: 0 3px 6px #fff, 0 3px 6px #fff; */
-  background-color: #333333;
+  background-color: #222222;
   border-radius: 1rem;
   border-color: #111;
   border-style: solid;
   /* margin: .1%; */
   transition-duration: 1s;
   transition-delay: 0s;
+  z-index: 1;
+}
+
+
+
+footer,
+.fixed-bottom {
+  background-color: #222222;
+  z-index: inherit 100;
+}
+.gifResultList{
+  overflow-y:scroll;
+  height:80%;
+}
+.Component {
+  padding: 1% 1%;
+  color: #fff;
+  /* height: (calc((fit-content)+ (155%)*(window))) px; */
+  width: 18rem;
+  /* width: 100%; */
+  /* box-shadow: 0 3px 6px #fff, 0 3px 6px #fff; */
+  background-color: #222222;
+  border-radius: 1rem;
+  border-color: #111;
+  border-style: solid;
+  /* margin: .1%; */
+  transition-duration: 1s;
+  transition-delay: 0s;
+  z-index: 1;
 }
 .colHeader {
   height: fit-content;
-  background-color: #111111;
+  background-color: #111;
+  border-style: none;
 }
 
 .wrapper {
@@ -93,13 +115,16 @@ footer,
 
 .btnSideBar{
   background-color:#222222;
-  width:30rem;
+  column-width: 100%;
   height:5rem;
   opacity: .8;
   color: #9cb700;
   font-size: 2rem;
   text-align: center;
   padding-top: 1rem;
+  z-index: 3000;
+  display: fixed;
+  position:absolute 80 0 0 0;
 }
 .btnSideBar:hover{
   background-color:#9cb700;
@@ -107,33 +132,40 @@ footer,
   font-size: 2rem;
   text-align: center;
   opacity: 1;
+  z-index: 3000;
 }
 .btn-group-vertical{
   opacity: 1;
   padding-top:3rem;
+  width:10%;
+  z-index: 3000;
 }
 .btn-group-vertical:hover{
   opacity: 1;
 }
 .sideBarButton{
-  /* background: linear-gradient(90deg, rgba(156,183,0,1) 5%, rgba(34,34,34,.5) 15%, rgba(34,34,34,0.0) 100%); */
+  background-color: #9cb700;
   color: #222222;
   font-size: .5rem;
   text-align: left;
   font-weight: bold;
-  z-index: 2000;
+  z-index: 2001;
   height: 2rem;
   transition-duration: .5s;
   transition-delay: 0s;
 }
 
-.sideBarButton:hover{
-  background-color: #9cb700;
+.SBstyles{
+  
+}
 
+.sideBarButton:hover{
+  background-color: #222222;
+  color: #9cb700;
 }
 
 .sideBarButtonClose{
-  background: linear-gradient(90deg, rgba(156,183,0,1) 5%, rgba(156,183,0,1) 15%, rgba(156,183,0,1) 100%);
+  background-color: #9cb700;
   color: #222222;
   font-size: 1rem;
   font-weight: bold;
@@ -144,7 +176,6 @@ footer,
 }
 
 .sideBarButtonClose:hover{
-  background: linear-gradient(90deg, rgba(34,34,34,1) 5%, rgba(34,34,34,1) 15%, rgba(34,34,34,1) 100%);
   color:#9cb700;
   background-color:#222222;
 }
@@ -156,39 +187,30 @@ footer,
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
   .Component {
-  height: 12rem;
-  width: 10rem;
+    height: 20rem;
+    width: 28rem;
  }
 }
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  .Component {
-    height: 14rem;
-    width: 10rem;
- }
+
 }
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  .Component {
-    height: 16rem;
-    width: 14rem;
- }
+ 
 }
 
  /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .Component {
-    height: 18rem;
-    width: 15rem;
- }
+ 
 }
 
  /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
   .Component {
-    height: 20rem;
-    width: 25rem;
+    height: 24rem;
+    width: 32rem;
  }
 }

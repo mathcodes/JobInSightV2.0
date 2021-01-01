@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from "react";
 import Container from "../Container";
-import CCSearchForm from "../CCSearchForm";
-import CCSearchResults from "../CCSearchResults";
+import SearchForm from "../SearchForm";
+import SearchResults from "../SearchResults";
 // import Alert from "../Alert";
 import ArticleContext from "../../utils/ArticleContext";
-import YouTubeAPI from "../../utils/YouTubeAPI";
+import API from "../../utils/API";
+import "./style.css";
 
 //change the state... title and URL of the number
-function YouTube() {
+function Search() {
   const [articleState, setArticleState] = useState({  // |
     title: "",                                        // |
     url: ""                                           // | 
   });
 // in essence the goal of this is to make articleState available in an article context
 // so we have created an ArticleContext to do that for us: src/util/ArticleContext.js
-  const [search, setSearch] = useState("youTube");
+  const [search, setSearch] = useState("Wikipedia");
   const [Error, setError] = useState("");
 
   // When the component mounts, update the title to be Wikipedia Searcher
@@ -26,7 +27,7 @@ function YouTube() {
     }
 // only difference here is that we areusing the set article state tp set those two 
 // pieces of state as opposed to calling 2 individiually. 
-YouTubeAPI.searchTerms(search)
+    API.searchTerms(search)
       .then(res => {
         if (res.data.length === 0) {
           throw new Error("No results found."); 
@@ -36,7 +37,7 @@ YouTubeAPI.searchTerms(search)
         }
         setArticleState({ //now using these 2 pieces of state @ same time
           title: res.data[1][0],
-          url: res.data[2][0]
+          url: res.data[3][0]
         });
       })
       .catch(err => setError(err));
@@ -51,19 +52,19 @@ YouTubeAPI.searchTerms(search)
   };
   return (
     <ArticleContext.Provider value={articleState}>
-    <h5>YouTube</h5>
+    <h5>Wikipedia</h5>
       <div>
         <Container style={{ minHeight: "" }}>
-          <CCSearchForm
+          <SearchForm
             handleFormSubmit={handleFormSubmit}
             handleInputChange={handleInputChange}
             results={search}
           />
-          <CCSearchResults />
+          <SearchResults />
         </Container>
       </div>
     </ArticleContext.Provider>
   );
 }
 
-export default YouTube;
+export default Search;

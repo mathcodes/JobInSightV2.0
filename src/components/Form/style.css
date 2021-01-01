@@ -2,9 +2,16 @@
   margin: 20px;
 }
 
-.form input select{
+.form input{
   display: block;
   margin-top: 5px;
   margin-bottom: 5px;
-  width: 75%;
+  width: 90%;
+}
+
+select{
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 90%;
 }
