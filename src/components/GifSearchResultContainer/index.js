@@ -36,7 +36,9 @@ class SearchResultContainer extends Component {
 
   render() {
     return (
+
       <div>
+      <h5>gif Search:</h5>
         <GifSearchForm
           search={this.state.search}
           handleFormSubmit={this.handleFormSubmit}

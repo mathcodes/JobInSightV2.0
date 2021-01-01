@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Card() {
+function Card(props) {
   return (
     <>
     <h5>Card</h5>
@@ -15,10 +15,10 @@ function Card() {
         the bulk of the card's content.
       </p>
       <a href="#B1" class="card-link">
-        Card link
+        Card link {props.heading}
       </a>
       <a href="#D1" class="card-link">
-        Another link
+        Another link {props.children}
       </a>
     </div>
   </div>

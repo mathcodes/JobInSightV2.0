@@ -53,7 +53,7 @@ class Form extends Component {
     return (
       <div>
         <h5>
-          Hello {this.state.firstName} {this.state.lastName}. I see are on a journey to roll forward with {this.state.SelectOne}. And {this.state.SelectTwo}? I thought so!
+          Hello <span className="fName">{this.state.firstName}</span> <span className="lName">{this.state.lastName}</span>. To maximize your time while <span className="sOne">{this.state.SelectOne}</span> and making sure you are also <span className="sTwo">{this.state.SelectTwo}</span>, please submit this form to get started.
         </h5>
         <form className="form">
           <input
@@ -103,8 +103,8 @@ class Form extends Component {
             placeholder="SelectTwo"
           >
             <option selected>Choose one:</option>
-            <option value="create">I like to create things.</option>
-            <option value="complete">I like to complete tasks.</option>
+            <option value="create things">I like to create things.</option>
+            <option value="complete and accomplish tasks">I like to complete tasks.</option>
           </select>
           <button onClick={this.handleFormSubmit}>Submit</button>
         </form>

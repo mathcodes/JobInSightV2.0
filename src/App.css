@@ -84,7 +84,7 @@ footer,
   z-index: inherit 100;
 }
 .gifResultList{
-  overflow-y:scroll;
+  /* overflow-y:scroll; */
   height:80%;
 }
 .Component {
