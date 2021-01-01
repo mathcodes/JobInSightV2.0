@@ -10,6 +10,15 @@
   --night: #111;
 }
 
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
+
 .App {
   text-align: center;
   /* background-color: #111111; */
@@ -42,27 +51,15 @@ a {
 }
 
 .App-header {
-  /* background-color: #111; */
-  /* min-height: 100vh; */
-  display: grid;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  /* color: white; */
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.colHeader{
+  margin-top: 2rem;
 }
 
 footer,
@@ -70,38 +67,29 @@ footer,
   background-color: #29648a;
   z-index: inherit 100;
 }
-
 .Component {
-  padding: 1% 2%;
+  padding: 1% 1%;
   color: #fff;
-  /* height: (calc((fit-content)+15% (window))) px; */
-  /* height: calc((fit-content)+5%(window.innerHeight));  */
-  /* height 593.047px */
-  width: 95%;
-  z-index: 1;
-  margin: 1%;
+  height: 18rem;
+  width: 18rem;
+  /* width: 100%; */
   /* box-shadow: 0 3px 6px #fff, 0 3px 6px #fff; */
-
-  background-color: #111111;
-  border-style: inset;
-  border-width: 0.01rem;
-  border-radius: 0.5rem;
-  transition-duration: 5s;
+  background-color: #333333;
+  border-radius: 1rem;
+  border-color: #111;
+  border-style: solid;
+  /* margin: .1%; */
+  transition-duration: 1s;
   transition-delay: 0s;
+}
+.colHeader {
+  height: fit-content;
+  background-color: #111111;
 }
 
 .wrapper {
   background-color: #111;
 }
-/* 
-.Component:hover {
-  box-shadow: 0 3px 6px #fff, 0 3px 6px #fff;
-  transition-property: box-shadow;
-  box-shadow: 10px 10px;
-  background-color: #29648a;
-  color: white;
-  z-index: 999;
-} */
 
 .btnSideBar{
   background-color:#222222;
@@ -128,10 +116,79 @@ footer,
   opacity: 1;
 }
 .sideBarButton{
-background-color:#9cb700;
+  background: linear-gradient(90deg, rgba(156,183,0,1) 5%, rgba(34,34,34,.5) 15%, rgba(34,34,34,0.0) 100%);
+  color: #222222;
+  font-size: .5rem;
+  text-align: left;
+  font-weight: bold;
+  z-index: 2000;
+  height: 2rem;
+  transition-duration: .5s;
+  transition-delay: 0s;
+}
+
+.sideBarButton:hover{
+  background-color: #9cb700;
+
+}
+
+.sideBarButtonClose{
+  background: linear-gradient(90deg, rgba(156,183,0,1) 5%, rgba(156,183,0,1) 15%, rgba(156,183,0,1) 100%);
   color: #222222;
   font-size: 1rem;
   font-weight: bold;
   z-index: 2000;
   height: 3rem;
+  transition-duration: .5s;
+  transition-delay: 0s;
+}
+
+.sideBarButtonClose:hover{
+  background: linear-gradient(90deg, rgba(34,34,34,1) 5%, rgba(34,34,34,1) 15%, rgba(34,34,34,1) 100%);
+  color:#9cb700;
+  background-color:#222222;
+}
+
+/*/* ------------------ ------------ ------------------ */
+/*/* ------------------ Breakpoints  ------------------ */
+/*/* ------------------ ------------ ------------------ */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .Component {
+  height: 12rem;
+  width: 10rem;
+ }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .Component {
+    height: 14rem;
+    width: 10rem;
+ }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .Component {
+    height: 16rem;
+    width: 14rem;
+ }
+}
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .Component {
+    height: 18rem;
+    width: 15rem;
+ }
+}
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  .Component {
+    height: 14rem;
+    width: 18rem;
+ }
 }

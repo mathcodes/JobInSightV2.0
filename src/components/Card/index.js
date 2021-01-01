@@ -1,29 +1,24 @@
 import React from "react";
-import CardBtn from "../CardBtn";
-import ArticleContext from "../../utils/ArticleContext";
-import CardTitle from "../CardTitle";
 import "./style.css";
 
 function Card() {
   return (
-    // The most straightforward solution would be to add the Consumer to the Card component.
-    // This way, all Card components can have the Card context passed directly as props
-    <ArticleContext.Consumer>
-      {({ image, handleBtnClick }) => (
-        <div
-          className="card"
-          style={{
-            backgroundImage: image ? `url(${image})` : "none"
-          }}
-        >
-          {/* Here, we do not pass the title to demonstrate that it can also be consumed from the CardTitleText component */}
-          <CardTitle />
-          {!image && <i className="fa fa-spinner fa-spin" aria-hidden="true" />}
-          <CardBtn style={{ opacity: image ? 1 : 0 }} onClick={handleBtnClick} data-value="back" />
-          <CardBtn style={{ opacity: image ? 1 : 0 }} onClick={handleBtnClick} data-value="next" />
-        </div>
-      )}
-    </ArticleContext.Consumer>
+    <div class="card">
+    <div class="card-body">
+      <h4 class="card-title text-muted">Card title</h4>
+      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <p class="card-text text-muted">
+        Some quick example text to build on the card title and make up
+        the bulk of the card's content.
+      </p>
+      <a href="#B1" class="card-link">
+        Card link
+      </a>
+      <a href="#D1" class="card-link">
+        Another link
+      </a>
+    </div>
+  </div>
   );
 }
 

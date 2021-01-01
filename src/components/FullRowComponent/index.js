@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import ArticleContext from "../../utils/ArticleContext";
 import "./style.css";
+
+
 // import YouTube from "../YouTube/index.js";
 // import Calendar from "../Calendar/index.js";
 // import Cards from "../Cards/index.js";
 
 function FullRowComponent(props) {
+  const { title, url, username } = useContext(ArticleContext);
+
   return (
     <>
       <div className="content">
@@ -16,6 +21,8 @@ function FullRowComponent(props) {
             <h4>{props.occupation}</h4>
             <strong>Location:</strong>
             <h4>{props.location}</h4>
+            <strong>Title and URL:</strong>
+            <h4>{url}, {title}, {username}</h4>
             
           </div>
 

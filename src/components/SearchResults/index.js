@@ -12,17 +12,9 @@ function SearchResults() {
         {/* // gives us nice neat access to the title and url properties of that article we didnt 
       // have to accept it as 
       // props and make use of our title and url values inside of our return block here. */}
-        <h2>{title}-Test</h2>
-        <iframe
-        title="js based learning"
-          width="560"
-          height="315"
-          src={url}
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        {url}
+        <h4>{title}</h4>
+        <p>{url}</p>
+        
       </li>
     </ul>
   );

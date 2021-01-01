@@ -7,8 +7,22 @@ import React from "react"; // we import React,
 //  
 
 const ArticleContext = React.createContext({
+  id:"",
   title: "",
-  url: ""
+  url: "",
+  username: "User Name",
+  usernameError: "",
+  email: "",
+  emailError: "",
+  password: "",
+  passwordError: "",
+  confirmPassword: "",
+  confirmPasswordError: "",
+  errors: {},
+  redirect: false,
+  handleBtnClick: () => {},
+  term: "Test Term",
+  query:"Test Query"
 });
 
 export default ArticleContext;
