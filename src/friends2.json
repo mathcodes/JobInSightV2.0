@@ -8,23 +8,23 @@
   },
   {
     "id": 2,
-    "name": "Mr. Krabs",
+    "name": "Michael",
     "image": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
     "occupation": "Restaurant Owner",
     "location": "A Giant Anchor"
   },
   {
     "id": 3,
-    "name": "Squidward",
+    "name": "Russ",
     "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
-    "occupation": "Cashier",
+    "occupation": "Piano Player",
     "location": "An Easter Island Head"
   },
   {
     "id": 4,
     "name": "Dexter",
     "image": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
-    "occupation": "Boy Genius",
+    "occupation": "Serial Killer",
     "location": "A Secret Laboratory"
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "id": 6,
-    "name": "Doug Funnie",
+    "name": "Long Duck Dong",
     "image": "https://vignette1.wikia.nocookie.net/doug/images/3/3b/Doug001.gif/revision/latest?cb=20110807170511",
     "occupation": "Student",
     "location": "Bluffington"
