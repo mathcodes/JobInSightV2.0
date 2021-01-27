@@ -17,7 +17,7 @@ function App() {
     <div style = {{
       textAlign: "center"
     }}>
-      <h1>Redo-less with Redux</h1>
+       
        <Route path = "/"> <Switch>
           
           <Dashboard />

@@ -1,15 +1,11 @@
-/**
- * @author Vinit Shahdeo
- * @description a web app using youtube api
- */
-// creating a component
+
 import React, { Component } from 'react'; 
 import YTSearch from 'youtube-api-search';
 import SearchBar from '../search_bar';
 import VideoList from '../Video_list';
 import VideoDetail from '../Video_detail';
 
-const API_KEY = 'AIzaSyBKF4Eq5hSmYvCRGDvc8CvLOSyGWyKmms4'; // REPLACE IT WITH YOUR YOUTUBE API KEY
+const API_KEY ='AIzaSyBKF4Eq5hSmYvCRGDvc8CvLOSyGWyKmms4'; // REPLACE IT WITH YOUR YOUTUBE API KEY
 
 
 // YTSearch({key : API_KEY, term : 'Katrina Kaif'}, function(data){
@@ -35,7 +31,7 @@ class YTComp extends Component{
       selectedVideo : null
     };
 
-    this.videoSearch('Shreya Ghosal');
+    this.videoSearch('Miles Davis');
 
   }
   videoSearch(term){
@@ -55,11 +51,13 @@ class YTComp extends Component{
         <div className="container">
           <div className="row">
             <div className="col-8">
-              <VideoDetail video={this.state.selectedVideo} />
+            <h3>Search YouTube videos without leaving your space:</h3><br/>
+             <p><SearchBar onSearchTermChange={term => this.videoSearch( term )} /></p><br/>
+              <VideoDetail className="YTVideo" video={this.state.selectedVideo} />
             </div>
              
             <div className="col-4">
-              <SearchBar onSearchTermChange={term => this.videoSearch( term )} />
+              
               <VideoList
               onVideoSelect = {selectedVideo => {this.setState({selectedVideo})}}
               videos={this.state.videos}/>

@@ -17,7 +17,14 @@ import DropDown from "../components/DropDown/index.js";
 import Sidebar from "react-sidebar";
 
 class Dashboard extends React.Component {
-  constructor(props) {
+
+  //-- SIDEBAR -- //
+  //-- SIDEBAR -- //
+  //-- SIDEBAR -- //
+  //-- SIDEBAR -- //
+  //-- SIDEBAR -- //
+  //-- SIDEBAR -- //
+    constructor(props) {
     super(props);
     this.state = {
       sidebarOpen: false,
@@ -81,6 +88,14 @@ class Dashboard extends React.Component {
   onSetSidebarOpen(open) {
     this.setState({ sidebarOpen: open });
   }
+  //-- RENDER -- //
+  //-- RENDER -- //
+  //-- RENDER -- //
+  //-- RENDER -- //
+  //-- RENDER -- //
+  //-- RENDER -- //
+  //-- RENDER -- //
+  //-- RENDER -- //
 
   render() {
     return (
@@ -108,41 +123,29 @@ class Dashboard extends React.Component {
           </div>
         </div>
         {/* -------- ROW Rest of Them-------- */}
-        <div className="row g-2 g-lg-3 justify-content-md-center row-cols-1 row-cols-sm- row-cols-md-4">
+        <div className="row g-2 g-lg-3 justify-content-md-center row-cols-xs-1 row-cols-md-2 row-cols-lg-3">
           {/* -------- Calendar -------- */}
           <div id="Calendar" className="col Component">
             <Calendar />
           </div>
-          {/* ------  WikiSearch  ------ */}
+          {/* ------  YouTube  ------ */}
           <div id="WikiSearch" className="col col-sm Component">
             <YTComp />
           </div>
+          </div>
+                  <div className="row g-2 g-lg-3 justify-content-md-center row-cols-xs-1 row-cols-md-2 row-cols-lg-3">
+
           {/* -------- ContextComponent ------ 
           <div id="ContextComponent" className="col Component">
             <ContextComponent />
           </div>*/}
-          <div id="GifSearchResultContainer" className="col Component">
+         
+          {/* ---------- GifSearchResultContainer ----------*/}
+           <div id="GifSearchResultContainer" className="col Component">
             <GifSearchResultContainer />
           </div>
-          {/* ---------- Form ----------*/}
-          <div id=" " className="col Component">
-        
-          </div>
 
-          {/* ------<Modal2 />---- Form ----------*/}
-          <div id="ToDo" className="col Component">
-            
-          </div>
-          {/* ---------- Form ----------*/}
-          <div id="Form" className="col Component">
-            
-          </div>
-          {/* ---------- GifSearchResultContainer ----------*/}
-          
-          {/* --------  YOUTUBE -------- */}
-          <div id="YouTube" className="col Component">
-            <YouTube />
-          </div>
+         
           {/* ---------- Chat ----------*/}
           <div id="TWCard" className="col Component">
           <TWCard />
