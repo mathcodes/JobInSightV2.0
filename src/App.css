@@ -157,23 +157,12 @@ footer,
 
 .SBstyles{
   
-}
-
-.sideBarButton:hover{
-  background-color: #222222;
-  color: #9cb700;
-}
-
-.sideBarButtonClose{
-  background-color: #9cb700;
-  color: #222222;
-  font-size: 1rem;
-  font-weight: bold;
-  z-index: 2000;
-  height: 3rem;
-  transition-duration: .5s;
+ 
+  /* background: linear-gradient(90deg, #2E9CCA 0%, #AAABBB 100%); */
+  transition-duration: 1s;
   transition-delay: 0s;
-}
+  transition-property: height, background-color;
+ 
 
 .sideBarButtonClose:hover{
   color:#9cb700;
@@ -195,7 +184,17 @@ footer,
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
-}
+ 
+.Component:hover{
+  border-color:#9CB700;
+  background-color:#9CB700;
+  height: 25rem;
+  width: 25rem;
+  border-radius: .5rem;
+  z-index: 999;
+  /* background: linear-gradient(90deg, rgba(65,65,65,1) 0%, rgba(255,30,0,1) 100%); */
+} 
+ 
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
@@ -222,6 +221,7 @@ h4 {
   color: darkslategray;
 }
 
+ 
 .imagery { 
   width: auto; 
   height: 100px;
@@ -261,6 +261,7 @@ a {
 
 a:hover {
 	text-decoration: underline;
+ 
 }
 
 button {
