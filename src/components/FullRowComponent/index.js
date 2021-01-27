@@ -20,9 +20,9 @@ function FullRowComponent(props) {
             <h4>{props.occupation}</h4>
             <strong>Location:</strong>
             <h4>{props.location}</h4>*/}
-            <strong>Title and URL:</strong>
+            <strong>Location:</strong>
             <h4>
-              {url}, {title}, {username}
+              Carrboro, NC
             </h4>
           </div>
 

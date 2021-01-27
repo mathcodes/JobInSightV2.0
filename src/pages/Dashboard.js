@@ -5,14 +5,15 @@ import Counter from "../components/Counter/index.js";
 import FullRowHeader from "../components/FullRowHeader/index.js";
 // import Test from "../components/Test/index.js";
 import YouTube from "../components/YouTube/index.js";
+import YTComp from "../components/YTComp/index.js";
+import TWCard from "../components/TWCard/index.js";
 import Calendar from "../components/Calendar/index.js";
 import FriendRefactor from "../components/Cards/index.js";
 import OmdbContainer from "../components/OmdbContainer/index.js";
+// import Modal2 from "../components/Modal2/index.js";
 import GifSearchResultContainer from "../components/GifSearchResultContainer/index.js";
 // import ContextComponent from "../components/ContextComponent/index.js";
 import DropDown from "../components/DropDown/index.js";
-// import Card from "../components/Card/index.js";
-import Form from "../components/Form/index.js";
 import Sidebar from "react-sidebar";
 
 class Dashboard extends React.Component {
@@ -107,51 +108,129 @@ class Dashboard extends React.Component {
           </div>
         </div>
         {/* -------- ROW Rest of Them-------- */}
-        <div className="row g-2 g-lg-3 justify-content-md-center row-cols-1 row-cols-sm-4 row-cols-md-4">
+        <div className="row g-2 g-lg-3 justify-content-md-center row-cols-1 row-cols-sm- row-cols-md-4">
           {/* -------- Calendar -------- */}
           <div id="Calendar" className="col Component">
             <Calendar />
+          </div>
+          {/* ------  WikiSearch  ------ */}
+          <div id="WikiSearch" className="col col-sm Component">
+            <YTComp />
           </div>
           {/* -------- ContextComponent ------ 
           <div id="ContextComponent" className="col Component">
             <ContextComponent />
           </div>*/}
-          {/* ---------- Form ----------*/}
-          <div id="Form" className="col Component">
-            <Form />
-          </div>
-          {/* ---------- Chat ----------*/}
-          <div id="Form" className="col Component">
-            Chat Component
-          </div>
-          {/* ---------- Form ----------*/}
-          <div id="Goals" className="col Component">
-            Goals Component
-          </div>
-          {/* ---------- Form ----------*/}
-          <div id="ToDo" className="col Component">
-            ToDo Component
-          </div>
-          {/* ---------- Form ----------*/}
-          <div id="Form" className="col Component">
-            <Form />
-          </div>
-          {/* ---------- GifSearchResultContainer ----------*/}
           <div id="GifSearchResultContainer" className="col Component">
             <GifSearchResultContainer />
           </div>
+          {/* ---------- Form ----------*/}
+          <div id=" " className="col Component">
+        
+          </div>
+
+          {/* ------<Modal2 />---- Form ----------*/}
+          <div id="ToDo" className="col Component">
+            
+          </div>
+          {/* ---------- Form ----------*/}
+          <div id="Form" className="col Component">
+            
+          </div>
+          {/* ---------- GifSearchResultContainer ----------*/}
+          
           {/* --------  YOUTUBE -------- */}
           <div id="YouTube" className="col Component">
             <YouTube />
+          </div>
+          {/* ---------- Chat ----------*/}
+          <div id="TWCard" className="col Component">
+          <TWCard />
+          </div>
+          {/* ---------- Form ----------*/}
+          <div id="Goals" className="col Component">
+            
           </div>
           {/* ----------  CARD  -------- 
           <div id="Card" className="col Component">
             <Card />
           </div>*/}
-          {/* ------  WikiSearch  ------ 
+          
+          {/*  ---- FriendRefactor ----  */}
+          <div id="FriendRefactor" className="col col-sm Component">
+            <FriendRefactor />
+          </div>
+          {/* -------- DropDown -------- */}
+          <div id="DropDown" className="col col-sm Component">
+            <DropDown />
+          </div>
+          {/* -------- Counter --------*/}
+          <div id="Counter" className="col-sm Component">
+            <Counter />
+          </div>
+          {/* -------- Documents -------- */}
+          <div id="Documents" className="col-sm Component">
+            Documents Component
+          </div>
+          {/* -------- Links -------- */}
+          <div id="Links" className="col-sm Component">
+            Link Component
+          </div>
+
+          {/* -------- Omdb -------- */}
+          <div id="OmdbContainer" className="col-sm Component">
+            <OmdbContainer />
+          </div>
+        </div>
+        {/* -------- ROW Rest of Them-------- */}
+        <div className="row g-2 g-lg-3 justify-content-md-center row-cols-1 row-cols-sm- row-cols-md-4">
+          {/* -------- Calendar -------- */}
+          <div id="-----" className="col Component">
+
+          </div>
+          {/* ------  WikiSearch  ------ */}
           <div id="WikiSearch" className="col col-sm Component">
-            <WikiSearch />
+
+          </div>
+          {/* -------- ContextComponent ------ 
+          <div id="ContextComponent" className="col Component">
+            <ContextComponent />
           </div>*/}
+          <div id="-----" className="col Component">
+
+          </div>
+          {/* ---------- Form ----------*/}
+          <div id="Form" className="col Component">
+       
+          </div>
+
+          {/* ------<Modal2 />---- Form ----------*/}
+          <div id="-----" className="col Component">
+            
+          </div>
+          {/* ---------- Form ----------*/}
+          <div id="-----" className="col Component">
+        000
+          </div>
+          {/* ---------- GifSearchResultContainer ----------*/}
+          
+          {/* --------  YOUTUBE -------- */}
+          <div id="YouTube" className="col Component">
+            <YouTube />
+          </div>
+          {/* ---------- Chat ----------*/}
+          <div id="Form" className="col Component">
+          <TWCard />
+          </div>
+          {/* ---------- Form ----------*/}
+          <div id="Goals" className="col Component">
+           
+          </div>
+          {/* ----------  CARD  -------- 
+          <div id="Card" className="col Component">
+            <Card />
+          </div>*/}
+          
           {/*  ---- FriendRefactor ----  */}
           <div id="FriendRefactor" className="col col-sm Component">
             <FriendRefactor />

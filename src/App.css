@@ -187,8 +187,8 @@ footer,
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
   .Component {
-    height: 20rem;
-    width: 28rem;
+    height: 40rem;
+    width: 65rem;
  }
 }
 
@@ -210,7 +210,36 @@ footer,
  /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
   .Component {
-    height: 24rem;
-    width: 32rem;
+    height: 50rem ;
+    width: 60rem;
  }
+}
+body {
+  background: khaki;
+}
+
+h4 {
+  color: darkslategray;
+}
+
+.imagery { 
+  width: auto; 
+  height: 100px;
+  margin-top: 6px;
+}
+
+.w3-container {
+  padding-bottom: 30px !important;
+  height: 80vh !important;
+  overflow: auto;
+}
+
+.iframe1 {
+  width: 100%;
+  height: 700px;
+}
+
+.iframe2 {
+  width: 750px;
+  height: 700px;
 }
