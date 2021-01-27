@@ -7,10 +7,35 @@ import React from "react"; // we import React,
 //  
 
 const ArticleContext = React.createContext({
-  title: "",
-  url: "",
-  username: "",
-  interests: ""
-});
+  id:"id - test",
+  url: "URL - test",
+  username: "User Name - test",
+  usernameError: "",
+  email: "",
+  emailError: "",
+  password: "",
+  passwordError: "",
+  confirmPassword: "",
+  confirmPasswordError: "",
+  errors: {},
+  redirect: false,
+  handleBtnClick: () => {},
+  term: "Test Term",
+  query:"Test Query",
+  title: "Learn JavaScript - Full Course for Beginners",
+  author_name: "freeCodeCamp.org",
+  author_url: "https://www.youtube.com/c/Freecodecamp",
+  type: "video",
+  height: 113,
+  width: 200,
+  version: "1.0",
+  provider_name: "YouTube",
+  provider_url: "https://www.youtube.com/",
+  thumbnail_height: 360,
+  thumbnail_width: 480,
+  thumbnail_url: "https://i.ytimg.com/vi/PkZNo7MFNFg/hqdefault.jpg",
+  html: "<iframe width='200px' height='113' src='https://www.youtube.com/embed/PkZNo7MFNFg?feature=oembed' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
 
+});
+console.log(ArticleContext)
 export default ArticleContext;

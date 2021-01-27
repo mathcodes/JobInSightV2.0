@@ -10,12 +10,12 @@ function SearchForm(props) {
         <input
           value={props.search}
           onChange={props.handleInputChange}
-          name="term"
-          list="term"
+          name="name"
+          list="list"
           type="text"
           className="form-control"
           placeholder="Type in a search term to begin"
-          id="term"
+          id="searchQuery"
         />
       </div>
     </form>
