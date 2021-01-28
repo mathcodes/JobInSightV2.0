@@ -4,9 +4,8 @@ import Footer from "../components/Footer/Footer";
 import Counter from "../components/Counter/index.js";
 import FullRowHeader from "../components/FullRowHeader/index.js";
 // import Test from "../components/Test/index.js";
-import YouTube from "../components/YouTube/index.js";
+// import YouTube from "../components/YouTube/index.js";
 import YTComp from "../components/YTComp/index.js";
-import TWCard from "../components/TWCard/index.js";
 import Calendar from "../components/Calendar/index.js";
 import FriendRefactor from "../components/Cards/index.js";
 import OmdbContainer from "../components/OmdbContainer/index.js";
@@ -122,7 +121,7 @@ class Dashboard extends React.Component {
             <FullRowHeader />
           </div>
         </div>
-        {/* -------- ROW Rest of Them-------- */}
+        {/* -------- ROWS Rest of Them-------- */}
         <div className="row g-2 g-lg-3 justify-content-md-center row-cols-xs-1 row-cols-md-2 row-cols-lg-3">
           {/* -------- Calendar -------- */}
           <div id="Calendar" className="col Component">
@@ -132,8 +131,6 @@ class Dashboard extends React.Component {
           <div id="WikiSearch" className="col col-sm Component">
             <YTComp />
           </div>
-          </div>
-                  <div className="row g-2 g-lg-3 justify-content-md-center row-cols-xs-1 row-cols-md-2 row-cols-lg-3">
 
           {/* -------- ContextComponent ------ 
           <div id="ContextComponent" className="col Component">
@@ -148,7 +145,7 @@ class Dashboard extends React.Component {
          
           {/* ---------- Chat ----------*/}
           <div id="TWCard" className="col Component">
-          <TWCard />
+          
           </div>
           {/* ---------- Form ----------*/}
           <div id="Goals" className="col Component">
@@ -219,11 +216,11 @@ class Dashboard extends React.Component {
           
           {/* --------  YOUTUBE -------- */}
           <div id="YouTube" className="col Component">
-            <YouTube />
+             
           </div>
           {/* ---------- Chat ----------*/}
           <div id="Form" className="col Component">
-          <TWCard />
+       
           </div>
           {/* ---------- Form ----------*/}
           <div id="Goals" className="col Component">

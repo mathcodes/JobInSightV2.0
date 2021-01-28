@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Oswald&display=swap');
+
 :root {
-  --blue: #0067b6;
-  --ocean: #29648a;
-  --primary: hsl(204, 54%, 35%);
-  --sky: #2e9cca;
-  --magic: #25274d;
-  --fading: #464866;
-  --cloud: #aaabb8;
-  --lime: #9cb700;
-  --night: #111;
+  --primary-color: rgb(255, 92, 92);
+  --primary-variant: #ff2d2d;
+  --secondary-color: #1b9999;
+  --on-primary: rgb(250, 250, 250);
+  --on-background: rgb(66, 66, 66);
+  --on-background-alt: rgba(66, 66, 66, 0.7);
+  --background: rgb(255, 255, 255);
+  --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
 }
+
+[data-theme="dark"] {
+  --primary-color: rgb(150, 65, 255);
+  --primary-variant: #6c63ff;
+  --secondary-color: #03dac5;
+  --on-primary: #000;
+  --on-background: rgba(255, 255, 255, 0.9);
+  --on-background-alt: rgba(255, 255, 255, 0.7);
+  --background: #121212;
+}
+
+ 
 
 /* $grid-breakpoints: (
   xs: 0,
@@ -186,10 +199,10 @@ footer,
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-  .Component {
+  /* .Component {
     height: 40rem;
     width: 65rem;
- }
+ } */
 }
 
  /* Medium devices (tablets, 768px and up) */
@@ -209,10 +222,10 @@ footer,
 
  /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
-  .Component {
+  /* .Component {
     height: 50rem ;
     width: 60rem;
- }
+ } */
 }
 body {
   background: khaki;
