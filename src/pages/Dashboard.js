@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer/Footer";
 // import WikiSearch from "../components/WikiSearch/index.js";
-import Counter from "../components/Counter/index.js";
+import Counter from "../components/Counter/index.js.js.js";
 import FullRowHeader from "../components/FullRowHeader/index.js";
 // import Test from "../components/Test/index.js";
 // import YouTube from "../components/YouTube/index.js";
